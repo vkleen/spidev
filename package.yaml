@@ -1,0 +1,21 @@
+name: spidev
+version: 0.0.0.0
+synopsis: Interface with spidev on Linux
+github: vkleen/relayctl
+category: Utility
+
+_common: !include "./common.yaml"
+<<: *legal
+<<: *default-ghc-options
+<<: *relude
+
+library:
+  source-dirs: src
+
+  dependencies:
+    - bytestring
+    - finite-typelits
+    - inline-c
+    - unix
+    - vector
+    - vector-sized

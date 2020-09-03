@@ -1,0 +1,11 @@
+cradle:
+  cabal:
+    - path: "./relayd"
+      component: "relayctl:exe:relayd"
+    - path: "./relay-api"
+      component: "lib:relayctl"
+    - path: "./spidev"
+      component: "lib:spidev"
+
+dependencies:
+  - package.yaml
